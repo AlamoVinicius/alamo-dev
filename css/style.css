@@ -69,7 +69,7 @@ body {
 }
 
 .main-btn-box a {
-    margin: 0 .6em;
+  margin: 0 0.6em;
 }
 
 .main-btn {
@@ -91,7 +91,7 @@ body {
 
 .main-btn:hover {
   background-color: #0d0d0d;
-  box-shadow: 0px 15px 20px #12732A;
+  box-shadow: 0px 15px 20px #12732a;
   color: #44f24f;
   transform: translateY(-7px);
   border: 1px solid #44f24f;
@@ -102,8 +102,8 @@ body {
 }
 
 .main-btn i {
-    font-size: 1.5em;
-    margin-left: .4em;
+  font-size: 1.5em;
+  margin-left: 0.4em;
 }
 
 /* my picture and abou-me*/
@@ -124,129 +124,193 @@ body {
 }
 
 .about-me img {
-    border-radius: 50%;
-    width: 200px;
+  border-radius: 50%;
+  width: 200px;
 }
 
 .about-me p {
-    margin-top: 2em;
-    text-align: justify;
-    color: white;
+  margin-top: 2em;
+  text-align: justify;
+  color: white;
 }
 
 .arrow-down {
-    color: #44f24f;
-    font-size: 3em;
+  color: #44f24f;
+  font-size: 3em;
 }
 
 /* about me area */
 
 .about-area {
-    background-image: url(../img/background-img2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    box-shadow: inset 0 0 9px 5px rgba(0, 0, 0, 0.637);
-    padding-bottom: 4em;
+  background-image: url(../img/background-img2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 9px 5px rgba(0, 0, 0, 0.637);
+  padding-bottom: 4em;
 }
 
 .my-description {
-    background-color: #f0efef;
-    margin-top: 2em;
-    padding: 3em;
-    text-align: justify;
-    line-height: 1.5em;
-    border-radius: 15px;
-    font-family: 'Raleway', sans-serif;
+  background-color: #f0efef;
+  margin-top: 2em;
+  padding: 3em;
+  text-align: justify;
+  line-height: 1.5em;
+  border-radius: 15px;
+  font-family: "Raleway", sans-serif;
 }
 
 .my-description h2 {
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    border-bottom: 1px solid #0d0d0d;
-    margin: auto;
-    margin-bottom: 1em;
-    border-radius: 0 0 10px 10px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  border-bottom: 1px solid #0d0d0d;
+  margin: auto;
+  margin-bottom: 1em;
+  border-radius: 0 0 10px 10px;
 }
 
 .main-btn-cv {
-    padding: 1.3em 3em;
-    font-size: 12px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #12732A;
-    background-color: rgba(255, 255, 255, 0.055);
-    border: 1px solid #12732A;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-    max-width: 250px;
-    margin: 0 auto;
-  }
-  
-  .main-btn-cv:hover {
-    background-color: #0d0d0d;
-    box-shadow: 0px 15px 20px #12732A;
-    color: #44f24f;
-    transform: translateY(-7px);
-    border: 1px solid #44f24f;
-  }
-  
-  .main-btn-cv:active {
-    transform: translateY(-1px);
-  }
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #12732a;
+  background-color: rgba(255, 255, 255, 0.055);
+  border: 1px solid #12732a;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  max-width: 250px;
+  margin: 0 auto;
+}
 
-  .btn-cv {
-      text-align: center;
-      margin-top: 2em;
-  }
+.main-btn-cv:hover {
+  background-color: #0d0d0d;
+  box-shadow: 0px 15px 20px #12732a;
+  color: #44f24f;
+  transform: translateY(-7px);
+  border: 1px solid #44f24f;
+}
 
-  .btn-cv i {
-      font-size: 1.5em;
-      margin-left: .4em;
-      align-items: center;
-  }
+.main-btn-cv:active {
+  transform: translateY(-1px);
+}
 
-  /* my skills */
+.btn-cv {
+  text-align: center;
+  margin-top: 2em;
+}
 
-  .technology-area {
-    background-color: #0d0d0d;
-    padding-top: 2em;
-  }
+.btn-cv i {
+  font-size: 1.5em;
+  margin-left: 0.4em;
+  align-items: center;
+}
 
-  .technology-area h3 {
-    font-family: 'Raleway', sans-serif;
-    color: #44f24f;
-    margin: auto;
-    width: 80%;
-    border-bottom: 1px solid #44f24f;
-    padding-bottom: 1em;
-    border-radius: 0 0 10px 10px;
-  }
+/* my skills */
 
-  .skills {
-    margin-top: 3em;
-    margin-bottom: 1em;
-    background-color: #f0efef;
-    height: 100px;
-    border-radius: 40px;
-    border: 1px solid #44f24f;
-    box-shadow: 0px 15px 20px #12732A;
-  }
+.technology-area {
+  background-color: #0d0d0d;
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
 
-  .skills img, svg {
-    padding: 1em;
-    height: 100px;
-  }
+.technology-area h3 {
+  font-family: "Raleway", sans-serif;
+  color: #44f24f;
+  margin: auto;
+  width: 80%;
+  border-bottom: 1px solid #44f24f;
+  padding-bottom: 1em;
+  border-radius: 0 0 10px 10px;
+}
 
-  .skills svg {
-    color: #44f24f;
-  }
+.skills {
+  margin-top: 3em;
+  margin-bottom: 1em;
+  background-color: #f0efef;
+  height: 100px;
+  border-radius: 40px;
+  border: 1px solid #44f24f;
+  box-shadow: 0px 15px 20px #12732a;
+}
 
-  .skills h4 {
-    color: #44f24f;
-    font-family: 'Raleway', sans-serif;
-  }
+.skills img,
+svg {
+  padding: 1em;
+  height: 100px;
+}
+
+.skills svg {
+  color: #44f24f;
+}
+
+.skills h4 {
+  color: #44f24f;
+  font-family: "Raleway", sans-serif;
+}
+
+/* portifolio-area */
+
+#Portifolio-area {
+  background-image: url(../img/background-img2.jpg);
+  background-attachment: fixed;
+  box-shadow: inset 0 0 9px 5px rgba(0, 0, 0, 0.637);
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 2em;
+}
+
+#Portifolio-area h3 {
+  font-family: "Raleway", sans-serif;
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+  color: #f0efef;
+  text-transform: uppercase;
+  border-bottom: 1px solid #f0efef;
+  border-radius: 0 0 25px 25px;
+  margin-bottom: 3em;
+}
+
+#Portifolio-area h5 {
+  color: #44f24f;
+  font-family: "Raleway", sans-serif;
+}
+
+.card {
+  background-color: #0d0d0d;
+  padding-bottom: 1em;
+  color: #f0efef;
+  border-radius: 20px;
+}
+
+.card img {
+  border-radius: 25px 25px 0 0;
+}
+
+/* contact-area */
+#contact-area {
+  background-color: #0d0d0d;
+}
+
+#contact-area h3 {
+  padding: 1em;
+  color: #44f24f;
+  padding-bottom: 1em;
+  font-family: "Raleway", sans-serif;
+  border-bottom: 1px solid #44f24f;
+  border-radius: 0 0 25px 25px;
+  text-transform: uppercase;
+}
+
+.contact-box {
+  padding: 2em;
+}
+
+.contact-box i {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #44f24f;
+}

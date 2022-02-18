@@ -26,10 +26,12 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,600;1,300&family=Roboto+Mono:wght@300;700&display=swap"
     rel="stylesheet">
+
   <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
 </head>
+
+<!--Header-->
 
 <body>
   <header>
@@ -44,8 +46,8 @@
           <div class="navbar-nav">
             <a class="nav-link" href="#about-me">Sobre</a>
             <a class="nav-link" href="#technology-area">Tecnologias</a>
-            <a class="nav-link" href="#">Portfólio</a>
-            <a class="nav-link" href="#">Contato</a>
+            <a class="nav-link" href="#Portifolio-area">Portfólio</a>
+            <a class="nav-link" href="#contact-area">Contato</a>
           </div>
         </div>
       </div>
@@ -90,6 +92,7 @@
       </div>
     </div>
   </div>
+
   <!--About me-->
   <main class="container-fluid about-area" id="about-me">
     <div class="container">
@@ -116,7 +119,6 @@
           Aberto a novos aprendizados e desafios. Qualquer tipo de conhecimento é bem-vindo, assim como aprender novas
           tecnologias e suas funções não somente na área de TI.
           </p>
-
           <div class="row btn-cv">
             <a href="docs/Profile.pdf" download type="pdf" target="_blank" class="main-btn-cv ">Baixe meu cv <i
                 class="fas fa-download"></i></a>
@@ -125,75 +127,143 @@
       </div>
     </div>
   </main>
+
   <!-- Technology area -->
-  <section class="container-fluid technology-area"id="technology-area">
-    <div class="container" >
+  <section class="container-fluid technology-area" id="technology-area">
+    <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center">
-          <h3 data-aos="fade-up" data-aos-duration="1000" >Algumas tecnologias</h3>
+        <div class="col-sm-12 text-center">
+          <h3 data-aos="fade-up" data-aos-duration="1000">Algumas tecnologias</h3>
         </div>
-        <div class="col-md-3">
+        <div class="col">
           <div class="skills text-center" data-aos="fade-left" data-aos-duration="1000">
             <img src="img/technoloys/bootstrap.svg" alt="bootstrap logo">
-            
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col">
           <div class="skills text-center" data-aos="fade-left" data-aos-duration="1000">
             <img src="img/technoloys/css.svg" alt="Css logo">
-            
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col">
           <div class="skills text-center" data-aos="fade-left" data-aos-duration="1000">
             <img src="img/technoloys/git.svg" alt="git logo">
-            
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col">
           <div class="skills text-center" data-aos="fade-left" data-aos-duration="1000">
             <img src="img/technoloys/github.svg" alt="GitHub logo">
           </div>
         </div>
-
-        <div class="col-md-3">
+        <div class="col">
           <div class="skills text-center" data-aos="fade-right" data-aos-duration="1000">
             <img src="img/technoloys/html.svg" alt="html logo">
           </div>
         </div>
-
-        <div class="col-md-3">
+        <div class="col">
           <div class="skills text-center" data-aos="fade-right" data-aos-duration="1000">
             <img src="img/technoloys/js.svg" alt="Js logo">
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col">
           <div class="skills text-center" data-aos="fade-right" data-aos-duration="1000">
             <img src="img/technoloys/logo-python.png" alt="python logo">
           </div>
         </div>
-
-        <div class="col-md-3">
+        <div class="col">
           <div class="skills text-center" data-aos="fade-right" data-aos-duration="1000">
             <img src="img/technoloys/mongo.jpeg" alt="mongo logo">
           </div>
         </div>
-
-        <div class="col-md-3">
+        <div class="col">
           <div class="skills text-center" data-aos="flip-left" data-aos-duration="1000">
             <img src="img/technoloys/node-logo.jpg" alt="Node logo">
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col">
           <div class="skills text-center" data-aos="flip-left" data-aos-duration="1000">
             <img src="img/technoloys/vscode.svg" alt="Vs-code logo">
           </div>
         </div>
-        
+      </div>
     </div>
-    </div>
+  </section>
 
-  </sectino>
+  <!--Portifolio area-->
+  <div class="container-fluid text-center" id="Portifolio-area">
+    <div class="container">
+      <div class="col-md-12 ">
+        <h3 data-aos="fade-up" data-aos-duration="1000">Projetos</h3>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100" data-aos="flip-left" data-aos-duration="1000">
+            <img src="/img/empresa-bootstrap.png" class="card-img-top" alt="site">
+            <div class="card-body">
+              <h5 class="card-title">Site bootstrap</h5>
+              <p class="card-text">Site desenvolvido com bootstrap e JavaScrip, modelo agencial.</p>
+              <a href="https://alamovinicius.github.io/site-exemplo-empresarial-bootstrap/" target="_blank"
+                class="main-btn">acesse</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" data-aos="flip-left" data-aos-duration="1000">
+            <img src="/img/aplicacao-react.png" class="card-img-top" alt="budjet">
+            <div class="card-body">
+              <h5 class="card-title">Aplicação react</h5>
+              <p class="card-text">Aplicação em react, interface de usuários com o uso de react-routes, e consumo de api
+                com node.js</p>
+              <a href="https://budget-app.alamovinicius.repl.co" target="_blank" class="main-btn">acesse</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" data-aos="flip-left" data-aos-duration="1000">
+            <img src="/img/calculadora-uber,png.png" class="card-img-top" alt="calculadora para ubers">
+            <div class="card-body">
+              <h5 class="card-title">Calculadora uber</h5>
+              <p class="card-text">Calculadora par motoristas Uber que eu desenvolvi, com html, css e Java Script,
+                auxilia motoristas nas contas diárias.</p>
+              <a href="https://alamovinicius.github.io/web-calculator/" target="_blank" class="main-btn">acesse</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100" data-aos="flip-left" data-aos-duration="1000">
+            <img src="/img/gitHub.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Meu GitHub</h5>
+              <p class="card-text">Acesse a outros projetos e códigos</p>
+              <a href="https://github.com/AlamoVinicius" target="_blank" class="main-btn">acesse</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer e contato -->
+
+  <footer class="container-fluid" id="contact-area">
+    <div class="container">
+      <div class="row col-md-12 text-center">
+        <h3>Entre em contato</h3>
+        <div class="col-md-4 contact-box">
+          <i class="fas fa-envelope"></i>
+          <p><span class="contact-title">Envie um Email:</span> alamo.cma22@gmail.com</p>
+        </div>
+        <div class="col-md-4 contact-box">
+          <i class="fa-brands fa-whatsapp"></i>
+          <p><span class="contact-title">Whatsapp:</span>+55 (31)99680-4848</p>
+        </div>
+        <div class="col-md-4 contact-box">
+          <i class="fab fa-linkedin"></i>
+          <p><span class="contact-title"><a href="https://www.linkedin.com/in/alamovinicius/">LinkedIn</a></span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -206,7 +276,6 @@
       easing: "ease-out-back",
     });
   </script>
-
 </body>
 
 </html>
