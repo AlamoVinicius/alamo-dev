@@ -159,7 +159,6 @@ body {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     border-bottom: 1px solid #0d0d0d;
-    width: 400px;
     margin: auto;
     margin-bottom: 1em;
     border-radius: 0 0 10px 10px;
@@ -180,6 +179,8 @@ body {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+    max-width: 250px;
+    margin: 0 auto;
   }
   
   .main-btn-cv:hover {
@@ -210,7 +211,6 @@ body {
   .technology-area {
     background-color: #0d0d0d;
     padding-top: 2em;
-    height: 800px;
   }
 
   .technology-area h3 {
