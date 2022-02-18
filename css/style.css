@@ -29,6 +29,10 @@ body {
   color: rgba(255, 255, 255, 0.637);
 }
 
+.navbar {
+  padding: 1em;
+  max-width: 100vw;
+}
 
 /* text and buttons */
 
