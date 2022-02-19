@@ -313,4 +313,38 @@ svg {
   font-size: 2em;
   margin-bottom: 1em;
   color: #44f24f;
+  border: 1px solid #44f24f;
+  padding: .5em;
+  border-radius: 50%;
+}
+
+.contact-box a, span {
+  color: white;
+  transition: .5em;
+}
+
+.contact-box > p > a > i {
+  font-size: 1em;
+  color: white;
+  border: none;
+  padding: 0;
+}
+
+
+.contact-box a:hover {
+  color: #44f24f;
+  text-decoration: underline;
+}
+
+.contact-box p {
+  color: #44f24f;
+}
+
+#copy-area {
+  color: #44f24f;font-family: "Raleway", sans-serif;
+}
+
+#copy-area a {
+  color: white;
+  font-weight: bold;
 }
