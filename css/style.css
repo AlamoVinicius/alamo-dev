@@ -135,8 +135,11 @@ body {
 }
 
 .arrow-down {
-  color: #44f24f;
   font-size: 3em;
+}
+
+.arrow-down a {
+  color: #44f24f;
 }
 
 /* about me area */
