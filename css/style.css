@@ -116,6 +116,10 @@ body {
    .main-btn-box .main-btn {
     font-size: .5em;
   }
+
+  .main-btn-box .main-btn i {
+    margin: .5em 0 0 45%;
+  }
 }
 
 /* my picture and abou-me*/
