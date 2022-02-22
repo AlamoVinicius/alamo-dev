@@ -106,6 +106,18 @@ body {
   margin-left: 0.4em;
 }
 
+@media (max-width: 325px) {
+  .typed-position {
+    margin-bottom: 5em;
+  }
+}
+
+@media (max-width: 480px) {
+   .main-btn-box .main-btn {
+    font-size: .5em;
+  }
+}
+
 /* my picture and abou-me*/
 
 .my-picture {
