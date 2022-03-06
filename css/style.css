@@ -3,6 +3,11 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 6em;
 }
 
 html,
@@ -14,7 +19,6 @@ body {
 
 .header-area {
   font-size: 1.3em;
-
   border-bottom: 1px solid #44f24f;
   border-radius: 0 0 25px 25px;
 }
