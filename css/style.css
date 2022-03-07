@@ -363,6 +363,45 @@ span {
   color: #44f24f;
 }
 
+/* email-area*/
+
+.email-box {
+  
+  margin-bottom: 2em;
+}
+
+.email-box input {
+  width: 100%;
+  padding: 0.5em;
+  margin: .5em 0;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: #f0efef;
+  border-radius: 15px;
+}
+
+.email-box .form-control {
+  padding: 0.5em;
+  background-color: black;
+  outline: none;
+  border: none;
+  color: white;
+  margin-bottom: .5em;
+}
+
+.email-box input:focus,
+.email-box .form-control:focus {
+  border: none;
+  border: 1px solid #44f24f;
+  box-shadow: none;
+}
+
+.email-box span {
+  font-size: 1.5em;
+  color: #44f24f;
+}
+
 #copy-area {
   color: #44f24f;
   font-family: "Raleway", sans-serif;
