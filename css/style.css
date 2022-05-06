@@ -145,7 +145,13 @@ body {
 
 .about-me img {
   border-radius: 50%;
-  width: 280px;
+  width: 250px;
+}
+
+@media (max-width: 350px) {
+  .about-me img {
+    width: 200px;
+  }
 }
 
 .about-me p {
