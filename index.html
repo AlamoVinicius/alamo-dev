@@ -5,351 +5,564 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Álamo Vinícius - Software Developer</title>
+  <title>Álamo Vinícius — Full Stack Developer</title>
 
   <meta name="author" content="Alamo Vinicius">
-  <meta property="og:title" content="Álamo Vinícius - Software Developer">
-  <meta property="og:image" content="img/profile.png">
-  <meta property="og:description" content="Portfólio Álamo Vinícius - Software Developer">
+  <meta property="og:title" content="Álamo Vinícius — Full Stack Developer">
+  <meta property="og:image" content="img/profile.jpg">
+  <meta property="og:description" content="Full Stack Web & Mobile Developer — React, Next.js, Flutter, Node.js, AI Integration">
 
-  <!--Boostrap & CSS-->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Font awesome and icons-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <script src="https://kit.fontawesome.com/5cb7311230.js" crossorigin="anonymous"></script>
-
-  <!--Google fonts-->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,600;1,300&family=Roboto+Mono:wght@300;700&display=swap"
-    rel="stylesheet">
 
   <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
-<!--Header-->
-
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark header-area fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"><i class="bi bi-code-slash"></i></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" href="#about-me">Sobre</a>
-            <a class="nav-link" href="#technology-area">Tecnologias</a>
-            <a class="nav-link" href="#Portifolio-area">Portfólio</a>
-            <a class="nav-link" href="#contact-area">Contato</a>
-          </div>
-        </div>
-      </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar-wrapper" id="navbar">
+    <nav class="navbar">
+      <a class="nav-logo" href="#home">
+        <span class="bracket">&lt;</span>AV<span class="bracket">/&gt;</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"      class="nav-link" data-i18n="nav_about">Sobre</a></li>
+        <li><a href="#skills"     class="nav-link" data-i18n="nav_skills">Habilidades</a></li>
+        <li><a href="#experience" class="nav-link" data-i18n="nav_experience">Experiência</a></li>
+        <li><a href="#projects"   class="nav-link" data-i18n="nav_projects">Projetos</a></li>
+        <li><a href="#contact"    class="nav-link" data-i18n="nav_contact">Contato</a></li>
+        <li>
+          <button class="lang-switcher" id="langSwitcher" aria-label="Switch language">
+            <span id="langLabel">EN</span>
+          </button>
+        </li>
+        <li>
+          <a href="docs/Profile.pdf" download class="nav-cta">
+            <i class="bi bi-download"></i> CV
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
 
-  <!-- my name and picture-->
-  <div class="container-fluid my-picture-text">
-    <div class="container">
-      <div class="row">
-        <section class="col-md-6 my-text">
-          <div class="typed-position">
-            <h1>Hi! i'm <strong>Álamo Vinícius</strong>.</h1>
-            <div id="typed-strings">
-              <p>Developer and programmer of computer systems.</p>
-            </div>
-            <span id="typed"></span>
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting" data-aos="fade-up" data-aos-duration="600">
+          <span class="greeting-line" data-i18n="hero_greeting">Olá, eu sou</span>
+        </p>
+        <h1 class="hero-name" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+          Álamo <span class="accent">Vinícius</span>
+        </h1>
+        <div class="hero-role" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+          <span class="role-prefix">// </span>
+          <div id="typed-strings-pt">
+            <p>Full Stack Developer</p>
+            <p>Mobile Dev · Flutter &amp; React Native</p>
+            <p>Integração com IA &amp; LLMs</p>
+            <p>Next.js &amp; Node.js</p>
           </div>
-          <div class="main-btn-box">
-            <div class="d-flex justify-content-center">
-              <a href="https://github.com/AlamoVinicius" class="main-btn" target="_blank">My GitHub <i
-                  class="fab fa-github"></i> </a>
-              <a href="https://www.linkedin.com/in/alamovinicius/" class="main-btn" target="_blank">My LinkedIn <i
-                  class="fab fa-linkedin"></i></a>
-            </div>
+          <div id="typed-strings-en" style="display:none">
+            <p>Full Stack Developer</p>
+            <p>Mobile Dev · Flutter &amp; React Native</p>
+            <p>AI &amp; LLM Integration</p>
+            <p>Next.js &amp; Node.js</p>
           </div>
-        </section>
-        <section class="col-md-6 my-picture">
-          <div class="about-me">
-            <img src="img/profile.jpg" alt="My photo">
-            <p>
-              Desenvolvedor de aplicações | JavaScript, Python, c# .NET | Dev Sistemas | Front end | Back end
-            </p>
-          </div>
-        </section>
+          <span id="typed"></span>
+        </div>
+        <p class="hero-description" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300" data-i18n="hero_desc">
+          Desenvolvedor Full Stack Web &amp; Mobile com experiência em aplicações modernas e escaláveis.
+          Especialista em JavaScript, TypeScript, Flutter e integração com IA.
+        </p>
+        <div class="hero-actions" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero_cta_projects">Ver Projetos <i class="bi bi-arrow-right"></i></a>
+          <a href="https://github.com/AlamoVinicius" class="btn btn-outline" target="_blank">
+            <i class="bi bi-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/alamovinicius/" class="btn btn-outline" target="_blank">
+            <i class="bi bi-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="hero-image" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+        <div class="image-wrapper">
+          <img src="img/profile.jpg" alt="Álamo Vinícius — Full Stack Developer">
+          <div class="image-ring"></div>
+          <div class="image-glow"></div>
+        </div>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span data-i18n="hero_available">Disponível para projetos</span>
+        </div>
       </div>
     </div>
-    <div class="container arrow-down">
-      <div class="row justify-content-center">
-        <div class="col-md-4 text-center"><a href="#contact-area"><i class="bi bi-arrow-down"></i></a></div>
-      </div>
-    </div>
-  </div>
+    <a href="#about" class="scroll-hint" aria-label="Rolar para baixo">
+      <span data-i18n="hero_scroll">Role para baixo</span>
+      <i class="bi bi-chevron-double-down"></i>
+    </a>
+  </section>
 
-  <!--About me-->
-  <main class="container-fluid about-area" id="about-me">
+  <!-- ===== STATS ===== -->
+  <section class="stats-section" aria-label="Estatísticas">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 my-description" data-aos="fade-up" data-aos-duration="1000">
-          <h2 data-aos="fade-left" data-aos-duration="1000">Sobre mim</h2>
-          <p><strong>Prazer Álamo;</strong></p>
-          <p>Desenvolvedor de Softwares, Web Front-end e
-            Backend 💻 Atuo no mercado de T.i desde setembro/2021, Estudo as tecnologias mais moderna e produtiva do
-            mercado voltado a desenvolvimento📖🖊. Você pode acessar meu <a href="https://github.com/AlamoVinicius"
-              target="_blank">GitHub</a> Para ver alguns de meus projetos, e tecnologias estudados no momento.</p>
-          <p>
-            <strong>Conhecimentos:</strong>
+      <div class="stats-grid" data-aos="fade-up" data-aos-duration="800">
+        <div class="stat-item">
+          <span class="stat-number">3+</span>
+          <span class="stat-label" data-i18n="stat_exp">Anos de experiência</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">2</span>
+          <span class="stat-label" data-i18n="stat_companies">Empresas de tecnologia</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">10+</span>
+          <span class="stat-label" data-i18n="stat_tech">Tecnologias dominadas</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">5k+</span>
+          <span class="stat-label" data-i18n="stat_users">Usuários impactados</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+        <span class="section-tag" data-i18n="about_tag">// sobre mim</span>
+        <h2 data-i18n="about_title">Quem sou eu</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-right" data-aos-duration="800">
+          <p data-i18n="about_p1">
+            Sou <strong>Álamo Vinícius</strong>, desenvolvedor Full Stack Web &amp; Mobile com experiência
+            construindo aplicações modernas e escaláveis em front-end, back-end e mobile
+            usando <strong>JavaScript</strong> e <strong>TypeScript</strong>.
           </p>
-          <pre class="knowledgeArea">
-            <strong>Administração</strong>;
-            POO- programação orientada a objetos
-            <strong>Client side (front end):</strong>
-            HTML - CSS - JS - React - React Native - principais frameworks;
-            <strong>Server side (back end):</strong>
-            Node.js
-            C# - .NET;
-            PYTHON
-            banco de dados:
-            SQL - MongoDB;
-            ferramentas:
-            GIT - GITHUB - BITBUCKET;
-            Vscode - Pycharm - entre outros editores.;
-          </pre>
+          <p data-i18n="about_p2">
+            Trabalho de ponta a ponta nos produtos, entregando arquiteturas limpas e orientadas
+            a performance com <strong>React</strong>, <strong>Next.js</strong>, <strong>Node.js</strong>,
+            <strong>Flutter</strong> e <strong>React Native</strong>.
           </p>
-          <div class="row btn-cv">
-            <a href="docs/Profile.pdf" download type="pdf" target="_blank" class="main-btn-cv ">Baixe meu cv <i
-                class="fas fa-download"></i></a>
+          <p data-i18n="about_p3">
+            Tenho forte background em <strong>integração com Inteligência Artificial</strong>,
+            focando em arquiteturas orientadas a ferramentas onde modelos de linguagem interpretam
+            linguagem natural e interagem dinamicamente com APIs e serviços. Experiência com
+            orquestração de LLMs e conceitos como <strong>MCP (Model Context Protocol)</strong>.
+          </p>
+          <a href="docs/Profile.pdf" download class="btn btn-outline" style="margin-top:1.5rem;display:inline-flex;">
+            <i class="bi bi-download"></i> <span data-i18n="about_cv">Baixar Currículo</span>
+          </a>
+        </div>
+        <div class="about-details" data-aos="fade-left" data-aos-duration="800">
+          <div class="detail-card">
+            <h3 data-i18n="about_card_skills">Especialidades</h3>
+            <div class="tags-grid">
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">React Native</span>
+              <span class="tag">Flutter</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">C# .NET</span>
+              <span class="tag">Python</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">AI / LLMs</span>
+              <span class="tag">MCP</span>
+              <span class="tag">Docker</span>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <!-- Technology area -->
-  <section class="container-fluid technology-area" id="technology-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <h3 data-aos="fade-up" data-aos-duration="1000">Algumas tecnologias</h3>
-        </div>
-        <div class="col-sm-2">
-          <div class="skills text-center" data-aos="fade-right" data-aos-duration="1000">
-            <img src="img/technoloys/react.png" alt="Js logo">
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="skills text-center" data-aos="fade-right" data-aos-duration="1000">
-            <img src="img/technoloys/react-native-1.svg" alt="Js logo">
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="skills text-center" data-aos="fade-right" data-aos-duration="1000">
-            <img src="img/technoloys/js.svg" alt="Js logo">
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="skills text-center" data-aos="flip-left" data-aos-duration="1000">
-            <img src="img/technoloys/node-logo.jpg" alt="Node logo">
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="skills text-center" data-aos="flip-left" data-aos-duration="1000">
-            <img src="img/technoloys/csharp.svg" alt="csharp logo">
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="skills text-center" data-aos="fade-left" data-aos-duration="1000">
-            <img src="img/technoloys/bootstrap.svg" alt="bootstrap logo">
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="skills text-center" data-aos="fade-right" data-aos-duration="1000">
-            <img src="img/technoloys/html.svg" alt="html logo">
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="skills text-center" data-aos="fade-left" data-aos-duration="1000">
-            <img src="img/technoloys/css.svg" alt="Css logo">
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="skills text-center" data-aos="fade-left" data-aos-duration="1000">
-            <img src="img/technoloys/git.svg" alt="git logo">
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="skills text-center" data-aos="fade-left" data-aos-duration="1000">
-            <img src="img/technoloys/github.svg" alt="GitHub logo">
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="skills text-center" data-aos="fade-left" data-aos-duration="1000">
-            <img src="img/technoloys/docker.png" alt="docker logo">
-          </div>
-        </div>
-
-
-        <div class="col-sm-2">
-          <div class="skills text-center" data-aos="fade-right" data-aos-duration="1000">
-            <img src="img/technoloys/logo-python.png" alt="python logo">
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="skills text-center" data-aos="fade-right" data-aos-duration="1000">
-            <img src="img/technoloys/mongo.jpeg" alt="mongo logo">
-          </div>
-        </div>
-
-        <div class="col-sm-2">
-          <div class="skills text-center" data-aos="flip-left" data-aos-duration="1000">
-            <img src="img/technoloys/vitejs.svg" alt="Vite logo">
+          <div class="detail-card">
+            <h3 data-i18n="about_card_info">Informações</h3>
+            <ul class="info-list">
+              <li><i class="bi bi-envelope-fill"></i><span>alamo.cma22@gmail.com</span></li>
+              <li><i class="bi bi-geo-alt-fill"></i><span>Contagem, Minas Gerais, Brasil</span></li>
+              <li><i class="bi bi-code-slash"></i><span>Full Stack Developer</span></li>
+              <li><i class="bi bi-phone-fill"></i><span>Web · Mobile · AI</span></li>
+              <li><i class="bi bi-check-circle-fill accent"></i><span class="available" data-i18n="about_available">Disponível para projetos</span></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!--Portifolio area-->
-  <div class="container-fluid text-center" id="Portifolio-area">
+  <!-- ===== SKILLS ===== -->
+  <section class="skills-section" id="skills">
     <div class="container">
-      <div class="col-md-12 ">
-        <h3 data-aos="fade-up" data-aos-duration="1000">Projetos</h3>
+      <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+        <span class="section-tag" data-i18n="skills_tag">// tecnologias</span>
+        <h2 data-i18n="skills_title">Stack &amp; Ferramentas</h2>
       </div>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
 
-        <div class="col">
-          <div class="card h-100" data-aos="flip-left" data-aos-duration="1000">
-            <img src="img/naSala.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Na Sala</h5>
-              <p class="card-text">Sistema de Reservas de macas para o estudio de tatuagem</p>
-              <a href="https://www.youtube.com/watch?v=ms9mcSNoyoE&t=11s&ab_channel=%C3%81lamoVin%C3%ADcius"
-                target="_blank" class="main-btn">acesse</a>
+      <div class="skills-categories">
+
+        <div class="skills-category" data-aos="fade-up" data-aos-duration="800">
+          <h3 class="category-title"><i class="bi bi-display"></i> <span data-i18n="skills_frontend">Front-end & Mobile</span></h3>
+          <div class="skills-grid">
+            <div class="skill-card"><img src="img/technoloys/js.svg" alt="JavaScript"><span>JavaScript</span></div>
+            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"><span>TypeScript</span></div>
+            <div class="skill-card"><img src="img/technoloys/react.png" alt="React"><span>React</span></div>
+            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" class="icon-invert"><span>Next.js</span></div>
+            <div class="skill-card"><img src="img/technoloys/react-native-1.svg" alt="React Native"><span>React Native</span></div>
+            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"><span>Flutter</span></div>
+            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS"><span>Tailwind CSS</span></div>
+            <div class="skill-card"><img src="img/technoloys/html.svg" alt="HTML5"><span>HTML5</span></div>
+            <div class="skill-card"><img src="img/technoloys/css.svg" alt="CSS3"><span>CSS3</span></div>
+          </div>
+        </div>
+
+        <div class="skills-category" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+          <h3 class="category-title"><i class="bi bi-server"></i> <span data-i18n="skills_backend">Back-end, AI & Banco de Dados</span></h3>
+          <div class="skills-grid">
+            <div class="skill-card"><img src="img/technoloys/node-logo.jpg" alt="Node.js"><span>Node.js</span></div>
+            <div class="skill-card"><img src="img/technoloys/logo-python.png" alt="Python"><span>Python</span></div>
+            <div class="skill-card"><img src="img/technoloys/csharp.svg" alt="C#"><span>C# .NET</span></div>
+            <div class="skill-card"><img src="img/technoloys/mongo.jpeg" alt="MongoDB"><span>MongoDB</span></div>
+            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"><span>PostgreSQL</span></div>
+            <div class="skill-card ai-card"><i class="bi bi-diagram-3-fill"></i><span>MCP Protocol</span></div>
+          </div>
+        </div>
+
+        <div class="skills-category" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+          <h3 class="category-title"><i class="bi bi-stars"></i> <span data-i18n="skills_ai">IA & Automação</span></h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/openai/openai-original.svg" alt="OpenAI" class="icon-invert">
+              <span>ChatGPT / API</span>
+            </div>
+            <div class="skill-card skill-text-card">
+              <div class="skill-text-logo" style="font-size:1.1rem;letter-spacing:-0.03em;color:#d97757;font-weight:700;">claude</div>
+              <span>Claude / MCP</span>
+            </div>
+            <div class="skill-card skill-text-card">
+              <div class="skill-text-logo" style="font-size:0.95rem;font-weight:800;color:#e5e7eb;letter-spacing:-0.02em;">Cursor</div>
+              <span>Cursor AI</span>
+            </div>
+            <div class="skill-card ai-card">
+              <i class="bi bi-stars"></i>
+              <span>GitHub Copilot</span>
+            </div>
+            <div class="skill-card skill-text-card">
+              <div class="skill-text-logo n8n-logo">n8n</div>
+              <span>n8n</span>
+            </div>
+            <div class="skill-card skill-text-card">
+              <div class="skill-text-logo make-logo">Make</div>
+              <span>Make / Zapier</span>
+            </div>
+            <div class="skill-card skill-text-card">
+              <div class="skill-text-logo" style="font-size:1.4rem;">🦜</div>
+              <span>LangChain</span>
+            </div>
+            <div class="skill-card ai-card">
+              <i class="bi bi-cpu-fill"></i>
+              <span data-i18n="skills_aidev">Dev Assistido por IA</span>
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <div class="card h-100" data-aos="flip-left" data-aos-duration="1000">
-            <img src="img/empresa-bootstrap.png" class="card-img-top" alt="site">
-            <div class="card-body">
-              <h5 class="card-title">Site bootstrap</h5>
-              <p class="card-text">Site desenvolvido com bootstrap e JavaScrip, modelo agencial.</p>
-              <a href="https://alamovinicius.github.io/site-exemplo-empresarial-bootstrap/" target="_blank"
-                class="main-btn">acesse</a>
-            </div>
+        <div class="skills-category" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+          <h3 class="category-title"><i class="bi bi-tools"></i> <span data-i18n="skills_tools">Ferramentas & DevOps</span></h3>
+          <div class="skills-grid">
+            <div class="skill-card"><img src="img/technoloys/git.svg" alt="Git"><span>Git</span></div>
+            <div class="skill-card"><img src="img/technoloys/github.svg" alt="GitHub"><span>GitHub</span></div>
+            <div class="skill-card"><img src="img/technoloys/docker.png" alt="Docker"><span>Docker</span></div>
+            <div class="skill-card"><img src="img/technoloys/vitejs.svg" alt="Vite"><span>Vite</span></div>
+            <div class="skill-card"><img src="img/technoloys/vscode.svg" alt="VSCode"><span>VSCode</span></div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100" data-aos="flip-left" data-aos-duration="1000">
-            <img src="img/aplicacao-react.png" class="card-img-top" alt="budjet">
-            <div class="card-body">
-              <h5 class="card-title">Aplicação react</h5>
-              <p class="card-text">Aplicação em react, interface de usuários com o uso de react-routes, e consumo de api
-                com node.js</p>
-              <a href="https://budget-app.alamovinicius.repl.co" target="_blank" class="main-btn">acesse</a>
-            </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="experience-section" id="experience">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+        <span class="section-tag" data-i18n="exp_tag">// experiência</span>
+        <h2 data-i18n="exp_title">Experiência Profissional</h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- ACG -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-duration="800">
+          <div class="timeline-marker">
+            <div class="marker-dot current"></div>
+            <div class="marker-line"></div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" data-aos="flip-left" data-aos-duration="1000">
-            <img src="img/calculadora-uber,png.png" class="card-img-top" alt="calculadora para ubers">
-            <div class="card-body">
-              <h5 class="card-title">Calculadora uber</h5>
-              <p class="card-text">Calculadora par motoristas Uber que eu desenvolvi, com html, css e Java Script,
-                auxilia motoristas nas contas diárias.</p>
-              <a href="https://alamovinicius.github.io/web-calculator/" target="_blank" class="main-btn">acesse</a>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-meta">
+                <span class="timeline-badge current" data-i18n="exp_current">Atual</span>
+                <span class="timeline-period">Jun 2023 — <span data-i18n="exp_present">Presente</span></span>
+              </div>
+              <div class="timeline-company">
+                <h3>ACG Instituição de Pagamento SA</h3>
+                <p class="timeline-role" data-i18n="exp_acg_role">Mobile &amp; Web Developer</p>
+                <p class="timeline-location"><i class="bi bi-geo-alt"></i> São Paulo, Brasil</p>
+              </div>
+            </div>
+            <p class="timeline-desc" data-i18n="exp_acg_desc">
+              Fintech regulada pelo Banco Central do Brasil com +15 anos de experiência em contas de pagamento
+              e cartões corporativos, atendendo mais de 5.000 empresas. Contribuo no desenvolvimento e manutenção
+              das aplicações que compõem o ecossistema PagCorp.
+            </p>
+            <ul class="timeline-bullets">
+              <li data-i18n="exp_acg_b1">Mobile (Flutter): Desenvolvimento e manutenção de apps Android e iOS</li>
+              <li data-i18n="exp_acg_b2">Web (Next.js): Desenvolvimento de páginas e funcionalidades web modernas e responsivas</li>
+              <li data-i18n="exp_acg_b3">Colaboração no planejamento estratégico de novas features e melhorias contínuas</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Flutter</span><span>Next.js</span><span>TypeScript</span><span>React</span><span>Fintech</span>
             </div>
           </div>
         </div>
 
-
-        <div class="col">
-          <div class="card h-100" data-aos="flip-left" data-aos-duration="1000">
-            <img src="img/gitHub.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Meu GitHub</h5>
-              <p class="card-text">Acesse a outros projetos e códigos</p>
-              <a href="https://github.com/AlamoVinicius" target="_blank" class="main-btn">acesse</a>
+        <!-- Jurify -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-meta">
+                <span class="timeline-period">Jun 2022 — Jun 2023</span>
+              </div>
+              <div class="timeline-company">
+                <h3>Jurify</h3>
+                <p class="timeline-role" data-i18n="exp_jurify_role">JavaScript Developer · React · React Native · Node.js</p>
+                <p class="timeline-location"><i class="bi bi-geo-alt"></i> Contagem, Minas Gerais, Brasil</p>
+              </div>
+            </div>
+            <p class="timeline-desc" data-i18n="exp_jurify_desc">
+              Legaltech especializada em controle jurídico e logística processual. Desenvolvimento de soluções
+              inovadoras com IA e automação para otimizar a gestão jurídica e reduzir custos operacionais.
+            </p>
+            <ul class="timeline-bullets">
+              <li data-i18n="exp_jurify_b1">Front-End: CRMs, dashboards e páginas web com foco em UX eficiente</li>
+              <li data-i18n="exp_jurify_b2">Mobile: Apps Android e iOS para gestão de processos jurídicos em tempo real</li>
+              <li data-i18n="exp_jurify_b3">Liderança de squad multidisciplinar (devs, designers e juristas)</li>
+              <li data-i18n="exp_jurify_b4">Arquitetura de sistemas, regras de negócio e controle de deploys</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>React</span><span>React Native</span><span>Node.js</span><span>JavaScript</span><span>Legaltech</span>
             </div>
           </div>
         </div>
 
       </div>
     </div>
-  </div>
+  </section>
 
-  <!--Footer e contato -->
-
-  <footer class="container-fluid" id="contact-area">
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects-section" id="projects">
     <div class="container">
-      <div class="row col-md-12 text-center">
-        <h3>Entre em contato</h3>
-        <div class="col-md-4 contact-box">
-          <i class="fas fa-envelope"></i>
-          <p><span class="contact-title">Envie um Email:</span> alamo.cma22@gmail.com</p>
+      <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+        <span class="section-tag" data-i18n="proj_tag">// projetos</span>
+        <h2 data-i18n="proj_title">Projetos</h2>
+        <p class="section-desc" data-i18n="proj_desc">
+          Os projetos mais recentes são proprietários e confidenciais. Veja os projetos públicos e de estudo no GitHub.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Placeholder 1 — ACG -->
+        <div class="project-card placeholder" data-aos="fade-up" data-aos-duration="800">
+          <div class="placeholder-icon">
+            <i class="bi bi-shield-lock-fill"></i>
+          </div>
+          <div class="project-info">
+            <span class="project-badge confidential" data-i18n="proj_confidential">Confidencial</span>
+            <h3 data-i18n="proj_pagcorp_title">Plataforma PagCorp</h3>
+            <p data-i18n="proj_pagcorp_desc">
+              Sistema de gestão financeira corporativa para emissão de cartões, controle de despesas e contas de pagamento.
+              Aplicação mobile (iOS &amp; Android) e web para mais de 5.000 empresas.
+            </p>
+            <div class="project-tags">
+              <span>Flutter</span><span>Next.js</span><span>TypeScript</span><span>Fintech</span>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 contact-box">
-          <i class="fa-brands fa-whatsapp"></i>
-          <p><span class="contact-title">Whatsapp:</span>+55 (31)99680-4848</p>
+
+        <!-- Placeholder 2 — Jurify -->
+        <div class="project-card placeholder" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+          <div class="placeholder-icon">
+            <i class="bi bi-shield-lock-fill"></i>
+          </div>
+          <div class="project-info">
+            <span class="project-badge confidential" data-i18n="proj_confidential">Confidencial</span>
+            <h3 data-i18n="proj_jurify_title">Sistema Jurify</h3>
+            <p data-i18n="proj_jurify_desc">
+              Plataforma legaltech com CRM jurídico, dashboards de acompanhamento processual e aplicativo mobile
+              para gestão de processos em tempo real.
+            </p>
+            <div class="project-tags">
+              <span>React</span><span>React Native</span><span>Node.js</span><span>Legaltech</span>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 contact-box">
-          <i class="fab fa-linkedin"></i>
-          <p><a href="https://www.linkedin.com/in/alamovinicius/" target="_blank">LinkedIn <i
-                class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+
+        <!-- Placeholder 3 — AI -->
+        <div class="project-card placeholder wip" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+          <div class="placeholder-icon ai">
+            <i class="bi bi-robot"></i>
+          </div>
+          <div class="project-info">
+            <span class="project-badge wip-badge" data-i18n="proj_wip">Em desenvolvimento</span>
+            <h3 data-i18n="proj_ai_title">AI Tool Integration</h3>
+            <p data-i18n="proj_ai_desc">
+              Arquitetura orientada a ferramentas com modelos de linguagem interpretando linguagem natural e
+              interagindo com APIs e serviços via MCP (Model Context Protocol).
+            </p>
+            <div class="project-tags">
+              <span>Node.js</span><span>Python</span><span>LLMs</span><span>MCP</span>
+            </div>
+          </div>
         </div>
+
+        <!-- GitHub CTA card -->
+        <div class="project-card github-cta-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+          <i class="bi bi-github github-big-icon"></i>
+          <h3 data-i18n="proj_github_title">Mais projetos no GitHub</h3>
+          <p data-i18n="proj_github_desc">
+            Projetos open-source, experimentos e estudos disponíveis publicamente.
+          </p>
+          <a href="https://github.com/AlamoVinicius" target="_blank" class="btn btn-primary">
+            <i class="bi bi-box-arrow-up-right"></i> <span data-i18n="proj_github_btn">Ver GitHub</span>
+          </a>
+        </div>
+
       </div>
     </div>
+  </section>
 
-    <div class="container email-box text-center">
-      <div class="row">
-        <div class="col-md-6">
-          <span>Deixe sua mensagem: </span>
+  <!-- ===== CONTACT ===== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+        <span class="section-tag" data-i18n="contact_tag">// contato</span>
+        <h2 data-i18n="contact_title">Vamos trabalhar juntos?</h2>
+        <p class="section-desc" data-i18n="contact_desc">
+          Estou disponível para novos projetos e oportunidades. Não hesite em entrar em contato!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right" data-aos-duration="800">
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:alamo.cma22@gmail.com">alamo.cma22@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div>
+              <span class="contact-label">WhatsApp</span>
+              <a href="https://wa.me/5531996804848" target="_blank">+55 (31) 99680-4848</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/alamovinicius/" target="_blank">in/alamovinicius</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="bi bi-github"></i>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/AlamoVinicius" target="_blank">@AlamoVinicius</a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <form action="https://formsubmit.co/alamo.cma22@gmail.com" method="post">
+
+        <div class="contact-form-wrapper" data-aos="fade-left" data-aos-duration="800">
+          <form action="https://formsubmit.co/alamo.cma22@gmail.com" method="post" class="contact-form" id="contactForm">
             <input type="hidden" name="_captcha" value="false">
-            <input type="text" name="name" id="name" placeholder="Seu nome">
-            <input type="email" name="email" id="email" placeholder="Seu email">
-            <textarea class="form-control" rows="4" placeholder="Sua messagem..." name="message"></textarea>
             <input type="hidden" name="_next" value="https://alamovinicius.github.io/alamo-dev/">
-            <button class="main-btn" id="sub-form">Enviar</button>
+            <div class="form-group">
+              <label for="name" data-i18n="form_name">Nome</label>
+              <input type="text" name="name" id="name" data-i18n-placeholder="form_name_ph" placeholder="Seu nome completo" required>
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="form_email">Email</label>
+              <input type="email" name="email" id="email" data-i18n-placeholder="form_email_ph" placeholder="seu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="form_message">Mensagem</label>
+              <textarea name="message" id="message" rows="5" data-i18n-placeholder="form_message_ph" placeholder="Olá Álamo, gostaria de conversar sobre..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="sub-form" style="width:100%;justify-content:center;">
+              <span data-i18n="form_send">Enviar mensagem</span> <i class="bi bi-send-fill"></i>
+            </button>
           </form>
         </div>
       </div>
     </div>
+  </section>
 
-    <div id="copy-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>Desenvolvido por: <a href="https://github.com/AlamoVinicius" target="_blank">Álamo Vinícus</a>. &copy;
-              2022 Site portfólio.</p>
-          </div>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="bracket">&lt;</span>AV<span class="bracket">/&gt;</span>
+        </div>
+        <p class="footer-text">
+          <span data-i18n="footer_text">Desenvolvido com</span> <span class="accent">♥</span>
+          <span data-i18n="footer_by">por Álamo Vinícius</span> &copy; 2024
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/AlamoVinicius" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/alamovinicius/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/alamovsouza/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="mailto:alamo.cma22@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="script/script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script/script.js"></script>
   <script>
-    AOS.init({
-      easing: "ease-out-back",
-    });
+    AOS.init({ easing: "ease-out-quart", once: true, offset: 80 });
   </script>
 
 </body>
-
 </html>
